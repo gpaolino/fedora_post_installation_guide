@@ -114,8 +114,10 @@ sudo snapper -c home set-config ALLOW_USERS=$USER SYNC_ACL=yes
 ## 🔐 5. Enable SSH (Optional)
 
 ```bash
+rpm -qa | grep openssh-server
 sudo dnf install openssh-server
-sudo systemctl enable --now sshd
+sudo systemctl enable sshd
+sudo systemctl start sshd
 sudo systemctl status sshd
 sudo firewall-cmd --permanent --zone=public --add-service=ssh
 sudo firewall-cmd --reload
