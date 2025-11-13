@@ -186,6 +186,7 @@ sudo dnf install code
 | **Brave Browser** | `sudo dnf install dnf-plugins-core && sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo && sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc && sudo dnf install brave-browser` |
 | **yt-dlp (Snap)** | `sudo dnf install snap && sudo snap install --edge yt-dlp && sudo snap refresh --edge yt-dlp` |
 | **Git** | `sudo dnf install git` |
+| **Tor Browser** | `sudo dnf install torbrowser-launcher` |
 
 ---
 
